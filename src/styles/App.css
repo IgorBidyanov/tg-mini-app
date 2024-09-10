@@ -1,0 +1,11 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}

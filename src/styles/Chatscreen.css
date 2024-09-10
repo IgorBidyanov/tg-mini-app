@@ -1,0 +1,56 @@
+.chats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.chats__send {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.chats__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  padding: 0;
+  overflow-y: scroll;
+  list-style-type: none;
+}
+
+.chats__list-item {
+  width: fit-content;
+  max-width: 70vw;
+  padding: 8px;
+  border: 1px solid #e7eaec;
+  border-radius: 4px;
+  background-color: #938aea;
+}
+
+.chats__list-incoming {
+  align-self: flex-end;
+  background-color: #83ac76;
+}
+
+.chats__send-input {
+  flex: 1;
+  padding: 8px;
+}
+
+.chats__send-btn {
+  width: 32px;
+  height: 32px;
+  background: url('@/assets/dispatch.svg') center no-repeat;
+}
+
+@media (prefers-color-scheme: light) {
+  .chats__list-item {
+    border: 1px solid #000;
+  }
+}
